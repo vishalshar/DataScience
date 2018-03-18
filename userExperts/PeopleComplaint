@@ -1,0 +1,14 @@
+[(0, u'0.023*"line" + 0.021*"person" + 0.016*"brunch" + 0.016*"actually" + 0.015*"went" + 0.011*"charged" + 0.010*"dinner" + 0.010*"expected" + 0.010*"saturday" + 0.009*"party"'), 
+(1, u'0.043*"crab" + 0.036*"food" + 0.013*"nthe" + 0.012*"section" + 0.011*"meat" + 0.010*"dish" + 0.010*"salty" + 0.009*"oyster" + 0.009*"station" + 0.009*"like"'), 
+(2, u'0.051*"food" + 0.030*"service" + 0.016*"good" + 0.016*"buffet" + 0.015*"back" + 0.013*"experience" + 0.012*"customer" + 0.012*"come" + 0.011*"quality" + 0.011*"never"'), 
+(3, u'0.017*"charge" + 0.016*"worth" + 0.013*"brought" + 0.012*"almost" + 0.011*"however" + 0.011*"decided" + 0.010*"sick" + 0.009*"visit" + 0.009*"paying" + 0.008*"meat"'), 
+(4, u'0.022*"oyster" + 0.015*"everything" + 0.013*"buffet" + 0.012*"sashimi" + 0.011*"good" + 0.011*"dessert" + 0.010*"nothing" + 0.009*"looking" + 0.009*"even" + 0.009*"else"'), 
+(5, u'0.042*"buffet" + 0.026*"food" + 0.016*"spoon" + 0.015*"wicked" + 0.015*"better" + 0.014*"seafood" + 0.014*"really" + 0.013*"like" + 0.012*"selection" + 0.012*"thing"'), 
+(6, u'0.069*"buffet" + 0.028*"vega" + 0.022*"place" + 0.020*"good" + 0.017*"food" + 0.013*"much" + 0.013*"caesar" + 0.012*"best" + 0.012*"think" + 0.011*"price"'), 
+(7, u'0.021*"bacchanal" + 0.013*"section" + 0.011*"sushi" + 0.009*"kind" + 0.009*"year" + 0.008*"adult" + 0.008*"empty" + 0.008*"disappointment" + 0.008*"seemed" + 0.007*"people"'), 
+(8, u'0.014*"hotel" + 0.013*"back" + 0.011*"table" + 0.011*"lobster" + 0.009*"chair" + 0.009*"took" + 0.009*"group" + 0.009*"fact" + 0.009*"beef" + 0.008*"first"'), 
+(9, u'0.049*"line" + 0.044*"wait" + 0.034*"hour" + 0.033*"time" + 0.015*"minute" + 0.015*"back" + 0.014*"long" + 0.012*"people" + 0.012*"seated" + 0.011*"come"')]
+
+
+
+High Scores : crab, oyster, line, wait, service,

@@ -1,0 +1,55 @@
++ LDA with words less than size 3
+
+[(0, u'0.013*"la" + 0.012*"milk" + 0.012*"point" + 0.010*"grand" + 0.010*"et" + 0.010*"le" + 0.009*"glutenfre" + 0.009*"natur" + 0.008*"c" + 0.008*"brunch"'), 
+(1, u'0.028*"meat" + 0.023*"wing" + 0.021*"tast" + 0.017*"green" + 0.017*"hot" + 0.014*"pizza" + 0.014*"de" + 0.013*"tonight" + 0.011*"highrollerpizza" + 0.011*"roll"'), 
+(2, u'0.031*"chicken" + 0.028*"fri" + 0.023*"tri" + 0.018*"get" + 0.016*"salad" + 0.015*"taco" + 0.015*"chees" + 0.015*"sandwich" + 0.013*"sauc" + 0.013*"burger"'), 
+(3, u'0.054*"food" + 0.045*"good" + 0.037*"place" + 0.035*"great" + 0.019*"price" + 0.018*"go" + 0.018*"pizza" + 0.017*"servic" + 0.012*"love" + 0.012*"like"'), 
+(4, u'0.035*"beer" + 0.026*"ice" + 0.024*"awesom" + 0.021*"breakfast" + 0.019*"vega" + 0.019*"cream" + 0.017*"organ" + 0.016*"vegan" + 0.015*"flavor" + 0.015*"tea"'), 
+(5, u'0.035*"get" + 0.034*"free" + 0.022*"park" + 0.018*"check" + 0.018*"card" + 0.017*"lot" + 0.015*"buy" + 0.013*"use" + 0.012*"car" + 0.012*"drink"'), 
+(6, u'0.018*"day" + 0.017*"week" + 0.016*"locat" + 0.014*"vega" + 0.014*"room" + 0.011*"new" + 0.010*"th" + 0.010*"avail" + 0.009*"tuesday" + 0.009*"blvd"'), 
+(7, u'0.043*"servic" + 0.016*"custom" + 0.014*"go" + 0.014*"never" + 0.014*"food" + 0.012*"slow" + 0.012*"time" + 0.012*"back" + 0.012*"bad" + 0.012*"staff"'), 
+(8, u'0.039*"wait" + 0.029*"open" + 0.026*"get" + 0.026*"hour" + 0.023*"pm" + 0.020*"time" + 0.019*"close" + 0.014*"order" + 0.013*"long" + 0.013*"line"'), 
+(9, u'0.031*"like" + 0.020*"make" + 0.018*"get" + 0.015*"sure" + 0.015*"place" + 0.013*"know" + 0.012*"look" + 0.011*"need" + 0.011*"go" + 0.010*"want"')]
+
+Majorly: (Meat, Chicken, Food, Beer, Day, Service, Wait)
+
+
+
++ LDA with words greater than size 3
+
+[(0, u'0.055*"food" + 0.054*"service" + 0.028*"great" + 0.027*"good" + 0.025*"place" + 0.016*"back" + 0.016*"staff" + 0.015*"like" + 0.013*"friendly" + 0.013*"customer"'), 
+(1, u'0.034*"slow" + 0.020*"green" + 0.016*"opening" + 0.015*"bacon" + 0.011*"bartender" + 0.011*"cocktail" + 0.010*"might" + 0.009*"start" + 0.009*"ramen" + 0.009*"forget"'), 
+(2, u'0.044*"time" + 0.034*"wait" + 0.021*"order" + 0.017*"come" + 0.017*"open" + 0.016*"hour" + 0.015*"long" + 0.015*"line" + 0.015*"minute" + 0.013*"first"'), 
+(3, u'0.079*"place" + 0.028*"pizza" + 0.027*"love" + 0.019*"better" + 0.015*"best" + 0.014*"favorite" + 0.014*"restaurant" + 0.013*"closed" + 0.013*"like" + 0.010*"blvd"'), 
+(4, u'0.032*"chicken" + 0.020*"pizza" + 0.018*"cheese" + 0.018*"sauce" + 0.017*"good" + 0.016*"salad" + 0.015*"sandwich" + 0.015*"burger" + 0.015*"taco" + 0.015*"meat"'), 
+(5, u'0.062*"free" + 0.037*"vega" + 0.020*"check" + 0.016*"flavor" + 0.015*"chocolate" + 0.015*"cream" + 0.013*"available" + 0.012*"dessert" + 0.011*"offer" + 0.011*"getting"'), 
+(6, u'0.027*"beer" + 0.024*"lunch" + 0.022*"menu" + 0.022*"special" + 0.020*"great" + 0.019*"food" + 0.019*"good" + 0.018*"night" + 0.017*"price" + 0.016*"breakfast"'), 
+(7, u'0.032*"coffee" + 0.025*"happy" + 0.020*"cold" + 0.019*"hour" + 0.012*"money" + 0.010*"house" + 0.009*"chef" + 0.009*"strip" + 0.009*"girl" + 0.009*"latte"'), 
+(8, u'0.022*"sure" + 0.021*"make" + 0.018*"card" + 0.014*"bring" + 0.014*"room" + 0.013*"table" + 0.011*"parking" + 0.009*"next" + 0.009*"left" + 0.008*"club"'), 
+(9, u'0.021*"rice" + 0.016*"home" + 0.014*"away" + 0.012*"right" + 0.012*"walk" + 0.011*"pork" + 0.011*"find" + 0.010*"store" + 0.009*"stay" + 0.009*"lasvegas"')]
+
+Majorly: (food, service, slow, staff, time, wait, place, chicken, cheese, beer, price, parking, table, rice, pork)
+
+
+
++ LDA on Fast Food Reviews:
+
+[(0, u'0.019*"free" + 0.017*"card" + 0.017*"charge" + 0.016*"coupon" + 0.014*"said" + 0.012*"store" + 0.011*"meal" + 0.010*"told" + 0.008*"manager" + 0.007*"would"'),
+(1, u'0.028*"drink" + 0.023*"soda" + 0.022*"breakfast" + 0.017*"machine" + 0.017*"cream" + 0.013*"coney" + 0.012*"coke" + 0.010*"coffee" + 0.010*"ordered" + 0.009*"cheese"'),
+(2, u'0.007*"eating" + 0.006*"friend" + 0.006*"night" + 0.005*"hour" + 0.004*"door" + 0.004*"opening" + 0.004*"airport" + 0.004*"year" + 0.004*"sign" + 0.004*"stomach"'),
+(3, u'0.067*"chicken" + 0.019*"chipotle" + 0.019*"burrito" + 0.018*"sauce" + 0.015*"like" + 0.013*"rice" + 0.012*"wing" + 0.011*"bowl" + 0.011*"ordered" + 0.011*"salad"'),
+(4, u'0.071*"burger" + 0.015*"cheese" + 0.014*"like" + 0.013*"onion" + 0.012*"shake" + 0.012*"good" + 0.008*"five" + 0.008*"castle" + 0.008*"double" + 0.008*"patty"'),
+(5, u'0.027*"order" + 0.021*"time" + 0.019*"food" + 0.012*"service" + 0.012*"back" + 0.012*"drive" + 0.012*"location" + 0.011*"minute" + 0.011*"customer" + 0.008*"would"'),
+(6, u'0.026*"cane" + 0.020*"sauce" + 0.018*"finger" + 0.015*"toast" + 0.015*"poutine" + 0.010*"dipping" + 0.009*"raising" + 0.006*"pour" + 0.006*"pork" + 0.005*"tousignant"'),
+(7, u'0.027*"table" + 0.025*"dirty" + 0.021*"floor" + 0.020*"panda" + 0.015*"chinese" + 0.015*"express" + 0.011*"clean" + 0.009*"bathroom" + 0.007*"trash" + 0.007*"filthy"'),
+(8, u'0.041*"sandwich" + 0.041*"pizza" + 0.024*"taco" + 0.015*"cheese" + 0.013*"bread" + 0.013*"subway" + 0.011*"meat" + 0.011*"like" + 0.010*"topping" + 0.009*"sauce"'),
+(9, u'0.033*"food" + 0.026*"place" + 0.020*"good" + 0.014*"like" + 0.011*"fast" + 0.010*"great" + 0.010*"really" + 0.009*"nthe" + 0.009*"time" + 0.008*"pretty"')]
+
+Majorly: (Burger, Chicken, Sandwich, Pizza, )
+Service
+breakfast, drink, soda
+chipotle, burrito, chicken, sauce
+burger, cheese, onion
+food, order, time
+Floor, dirty, table, panda, express
+Subway, sandwich, cheese, bread, meat

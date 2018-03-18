@@ -1,0 +1,40 @@
+'votes.funny', 
+'votes.useful', 
+'votes.cool', 
+'review_count', 
+'fans', 
+'compliments.profile', 
+compliments.cute', 
+'compliments.funny', 
+'compliments.plain', 
+'compliments.writer', 
+'compliments.note', 
+'compliments.photos', 
+'compliments.hot', 
+'compliments.cool', 
+'compliments.more', 
+'compliments.list', 
+'numberofFriends', 
+'numberofElite'
+
+useful
+fans
+review
+compliment
+friends
+class
+
+Logistic Regresssion
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.554    0.006    0.826      0.554    0.663      0.662    0.986     0.800     true
+                 0.994    0.446    0.976      0.994    0.984      0.662    0.986     0.999     false
+Weighted Avg.    0.970    0.423    0.968      0.970    0.968      0.662    0.986     0.989     
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+   8017   6463 |      a = true
+   1687 258455 |      b = false
