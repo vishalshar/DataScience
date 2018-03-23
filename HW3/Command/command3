@@ -1,0 +1,34 @@
+library(tm)
+library(wordcloud)
+library(RColorBrewer)
+
+
+speech = “/home/vishal/Downloads/yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_review.json”
+modi_txt = readLines(speech)
+
+
+
+modi_data<-Corpus(VectorSource(modi_txt))
+modi_data<-tm_map(modi_data,stripWhitespace)
+modi_data<-tm_map(modi_data,tolower)
+modi_data<-tm_map(modi_data,removeNumbers)
+modi_data<-tm_map(modi_data,removePunctuation)
+modi_data<-tm_map(modi_data,removeWords, stopwords(“english”))
+modi_data<-tm_map(modi_data,removeWords, c (“and”,”the”,”our”,”that”,”for”,”are”,”also”,”more”,”has”,”must”,”have”,”should”,”this”,”with”))
+
+
+
+tdm_modi<-TermDocumentMatrix (modi_data)
+TDM1<-as.matrix(tdm_modi) 
+v = sort(rowSums(TDM1), decreasing = TRUE)
+Summary(v)
+
+
+wordcloud (modi_data, scale=c(5,0.5), max.words=1, random.order=FALSE, rot.per=0.35, use.r.layout=FALSE, colors=brewer.pal(8, “Dark2″))
+
+
+unlink(".RData")
+
+mongoimport --db local --collection myApp --type json --file /home/vishal/Downloads/yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_review.json
+mongoexport --db test --collection traffic --out traffic.json
+mongoexport --db local --collection myApp --type=csv --fields text --out /home/vishal/Downloads/yelp_dataset_challenge_academic_dataset/reviews.csv

@@ -1,0 +1,32 @@
+library(tm)
+library(SnowballC)
+library(wordcloud)
+library(jsonlite)
+
+install.packages('NLP')
+install.packages('RColorBrewer')
+
+data <- read.csv("/home/vishal/Downloads/yelp_dataset_challenge_academic_dataset/reviews.csv")
+data <- stream_in(file("/home/vishal/Downloads/yelp_dataset_challenge_academic_dataset/reviews.csv"))
+
+
+data <- read.csv("/home/vishal/PycharmProjects/DataScience/HW3/dict.csv")
+
+data1 <- Corpus(VectorSource(data$text))
+data2 <- tm_map(data1, PlainTextDocument)
+data3 <- tm_map(data2, removePunctuation)
+
+data4 <- tm_map(data3, removeWords, stopwords('english'))
+data5 <- tm_map(data4, removeWords, c('the', 'this', stopwords('english')))
+
+data <- tm_map(data, stemDocument)
+wordcloud(data, max.words = 100, random.order = FALSE)
+
+
+write.table(data, file = "/home/vishal/Downloads/yelp_dataset_challenge_academic_dataset/data1.csv",row.names=FALSE, na="",col.names=FALSE)
+
+
+wordcloud(data$name, data$freq, random.order=FALSE, colors=brewer.pal(8, "Dark2"))
+
+
+

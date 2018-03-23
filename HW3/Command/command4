@@ -1,0 +1,20 @@
+transactFile = '/home/vishal/Downloads/yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_review.json'
+
+index <- 0
+chunkSize <- 300000
+con <- file(description=transactFile,open="r")   
+dataChunk <- read.table(con, nrows=chunkSize, header=T, fill=TRUE, sep=",")
+
+repeat {
+        index <- index + 1
+        print(paste('Processing rows:', index * chunkSize))
+ 
+        if (nrow(dataChunk) != chunkSize){
+                print('Processed all files!')
+                break}
+       
+        dataChunk <- read.table(con, nrows=chunkSize, skip=0, header=FALSE, fill = TRUE, sep=",")
+        print(head(dataChunk))
+        break
+}
+close(con)
